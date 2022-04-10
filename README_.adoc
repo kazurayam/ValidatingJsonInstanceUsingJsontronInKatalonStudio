@@ -1,0 +1,1 @@
+https://json-schema.github.io/json-schema/example1.html
