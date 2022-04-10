@@ -1,19 +1,19 @@
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import java.nio.file.Path
 import java.nio.file.Paths
 
 import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+
 
 Path projectDir = Paths.get(RunConfiguration.getProjectDir())
 
-Path webDir = projectDir.resolve("Include/web");
-Path product1 = webDir.resolve("products/1.json");
-String product1Text = product1.toFile().text;
+ResponseObject response = WS.sendRequest(findTestObject('product1'))
 
 Path schemaDir = projectDir.resolve("Include/jsonschema");
 Path schema  = schemaDir.resolve("schema5.json");
 String schemaText = schema.toFile().text;
 
-assert WS.validateJsonSchema(product1Text, schemaText)
-
-
+assert WS.validateJsonSchema(response, schemaText)
