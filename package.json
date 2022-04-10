@@ -1,0 +1,22 @@
+{
+  "name": "validatingjsoninstanceusingjsontroninkatalonstudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazurayam/ValidatingJsonInstanceUsingJsontronInKatalonStudio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazurayam/ValidatingJsonInstanceUsingJsontronInKatalonStudio/issues"
+  },
+  "homepage": "https://github.com/kazurayam/ValidatingJsonInstanceUsingJsontronInKatalonStudio#readme",
+  "dependencies": {
+    "jsontron": "^0.8.19"
+  }
+}

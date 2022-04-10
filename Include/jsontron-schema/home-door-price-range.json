@@ -1,0 +1,36 @@
+{
+	"schema": {
+		"id": "roduct data rules",
+		"title": "Schematron Semantic Validation",
+		"schemaVersion": "ISO Schematron 2016",
+		"queryBinding": "jsonpath",
+		"defaultPhase": "phaseid1",
+		"phase": [
+			{
+				"id": "phaseid1",
+				"active": [ "patternid1" ]
+			}
+		],
+		"pattern": [
+			{
+				"id": "patternid1",
+				"title": "home door price range pattern",
+				"abstract": false,
+				"rule": [
+					{
+						"id": "price rule",
+						"abstract": false,
+						"context": "*",
+						"assert": [
+							{
+								"id": "assertIdFoo",
+								"test": "(jp.query(contextNode, '$..price') >= 12.50)",
+								"message": "Assert 1: Home door price can not be less than 12.50"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
