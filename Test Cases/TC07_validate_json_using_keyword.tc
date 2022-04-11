@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1_see_product1_in_browser</name>
+   <name>TC07_validate_json_using_keyword</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>87d26d5b-52d0-40d9-9d1b-2528fbb50df6</testCaseGuid>
+   <testCaseGuid>da9067cc-bc5d-4011-8b4c-734e17e898b3</testCaseGuid>
 </TestCaseEntity>

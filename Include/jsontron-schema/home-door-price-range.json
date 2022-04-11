@@ -20,11 +20,11 @@
 					{
 						"id": "price rule",
 						"abstract": false,
-						"context": "*",
+						"context": "$",
 						"assert": [
 							{
 								"id": "assertIdFoo",
-								"test": "(jp.query(contextNode, '$..price') >= 12.50)",
+								"test": "jp.query(contextNode, '$[?(@.name =~ /.*door.*/i && 'home' in @.tags)]') >= 12.50",
 								"message": "Assert 1: Home door price can not be less than 12.50"
 							}
 						]

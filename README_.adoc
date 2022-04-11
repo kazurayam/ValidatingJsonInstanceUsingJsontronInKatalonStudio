@@ -1,1 +1,9 @@
-https://json-schema.github.io/json-schema/example1.html
+== Reference
+
+1. https://json-schema.github.io/json-schema/example1.html
+
+2. https://amer-ali.github.io/jsontron/Jsontron-tutorial-v1.pdf[Tutorial on Jsontron for JSON Semantic Validation]
+
+https://www.baeldung.com/guide-to-jayway-jsonpath
+
+https://goessner.net/articles/JsonPath/index.html#e2
